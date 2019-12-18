@@ -12,7 +12,7 @@ before_install:
  - gcloud components update kubectl
  - gcloud auth activate-service-account --key-file service-account.json
  - gcloud config set project multi-k8s-261906
- - gcloud config set compute-zone asia-south1-a
+ - gcloud config set compute/zone asia-south1-a
  - gcloud container clusters get-credentials multi-cluster 
  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
  - docker buiid -t iamvvms/react-test -f ./client/Dcokerfile.dev ./client
