@@ -1,5 +1,5 @@
 docker build -t iamvvms/multi-client:latest -t iamvvms/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t iamvvms/multi-server:latest -t iamvvms/multi-server:$SHA  -f ./server/Dcokerfile ./server
+docker build -t iamvvms/multi-server:latest -t iamvvms/multi-server:$SHA  -f ./server/Dockerfile ./server
 docker build -t iamvvms/multi-worker:latest -t iamvvms/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push iamvvms/multi-client:latest
